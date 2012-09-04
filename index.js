@@ -9,4 +9,6 @@ module.exports = function deepFreeze (o) {
       deepFreeze(o[prop]);
     }
   });
+  
+  return o;
 };
