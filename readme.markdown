@@ -2,6 +2,8 @@
 
 recursively `Object.freeze()` objects
 
+[![build status](https://secure.travis-ci.org/substack/deep-freeze.png)](http://travis-ci.org/substack/deep-freeze)
+
 # example
 
 ``` js
