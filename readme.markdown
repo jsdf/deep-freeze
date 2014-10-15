@@ -1,8 +1,14 @@
 # deep-freeze
 
-recursively `Object.freeze()` objects
+recursively `Object.freeze()` objects.
 
-[![build status](https://secure.travis-ci.org/substack/deep-freeze.png)](http://travis-ci.org/substack/deep-freeze)
+this fork works in strict mode, so when 
+freezing a function you don't get the error:
+```
+> (function(){ "use strict"; deepFreeze(function(){}); })();
+
+TypeError: 'caller', 'callee', and 'arguments' properties may not be accessed on strict mode functions or the arguments objects for calls to them
+```
 
 # example
 

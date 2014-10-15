@@ -1,7 +1,7 @@
 {
-    "name" : "deep-freeze",
-    "version" : "0.0.1",
-    "description" : "recursively Object.freeze() objects and functions",
+    "name" : "deep-freeze-strict",
+    "version" : "1.0.0",
+    "description" : "recursively Object.freeze() objects and functions, works in strict mode",
     "main" : "index.js",
     "directories" : {
         "example" : "example",
@@ -15,19 +15,20 @@
     },
     "repository" : {
         "type" : "git",
-        "url" : "git://github.com/substack/deep-freeze.git"
+        "url" : "git://github.com/jsdf/deep-freeze.git"
     },
-    "homepage" : "https://github.com/substack/deep-freeze",
+    "homepage" : "https://github.com/jsdf/deep-freeze",
     "keywords" : [
         "freeze",
         "deep",
         "object",
-        "recursive"
+        "recursive",
+        "strict-mode"
     ],
     "author" : {
-        "name" : "James Halliday",
-        "email" : "mail@substack.net",
-        "url" : "http://substack.net"
+        "name" : "James Friend",
+        "email" : "james@jsdf.co",
+        "url" : "http://jsdf.co"
     },
     "license" : "public domain"
 }
