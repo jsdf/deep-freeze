@@ -4,7 +4,7 @@ var deepFreeze = require('../');
 test('deep freeze', function (t) {
   "use strict";
 
-  t.plan(1);
+  t.plan(2);
 
   var a = {
     // a function
@@ -15,7 +15,7 @@ test('deep freeze', function (t) {
   try {
     a.x = 5;
   } catch (e) {
-    if (e.type !== 'object_not_extensible') throw e;
+    t.ok('error thrown as expected');
   }
   t.equal(a.x, undefined);
 });
