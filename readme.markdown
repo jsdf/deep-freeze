@@ -1,4 +1,4 @@
-# deep-freeze
+# deep-freeze-strict
 
 recursively `Object.freeze()` objects.
 
@@ -13,7 +13,7 @@ TypeError: 'caller', 'callee', and 'arguments' properties may not be accessed on
 # example
 
 ``` js
-var deepFreeze = require('deep-freeze');
+var deepFreeze = require('deep-freeze-strict');
 
 deepFreeze(Buffer);
 Buffer.x = 5;
@@ -34,7 +34,7 @@ true
 # methods
 
 ``` js
-var deepFreeze = require('deep-freeze')
+var deepFreeze = require('deep-freeze-strict')
 ```
 
 ## deepFreeze(obj)
